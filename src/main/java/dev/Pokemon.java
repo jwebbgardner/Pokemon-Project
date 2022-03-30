@@ -1,79 +1,41 @@
 package dev;
 
 import dev.attributes.Ability;
+import dev.attributes.Item;
 import dev.attributes.Type;
 import dev.attributes.stats.Stat;
 import java.util.Arrays;
 
 public class Pokemon {
 
-    private final String name;
-    private Type type1;
-    private Type type2;
     private Ability ability;
     private int baseExperience;
     private int height;
-    private int weight;
+    private Item heldItem;
     private int id;
+    private final String name;
     private Stat[] stats;
+    private Type[] types;
+    private int weight;
 
-    public Pokemon() {
-        name = "missingno";
-    }
-
-    public Pokemon(String name, Type type1, Type type2, Ability ability, int baseExperience,
-            int height, int weight, int id, Stat[] stats) {
-        this.name = name;
-        this.type1 = type1;
-        this.type2 = type2;
+    public Pokemon(Ability ability, int baseExperience, int height, Item heldItem, int id,
+            String name, Stat[] stats, Type[] types, int weight) {
         this.ability = ability;
         this.baseExperience = baseExperience;
         this.height = height;
-        this.weight = weight;
+        this.heldItem = heldItem;
         this.id = id;
+        this.name = name;
         this.stats = stats;
+        this.types = types;
+        this.weight = weight;
     }
 
-    @Override
-    public String toString() {
-        return "Pokemon{" +
-                "name='" + name + '\'' +
-                ", type1=" + type1 +
-                ", type2=" + type2 +
-                ", ability=" + ability +
-                ", baseExperience=" + baseExperience +
-                ", height=" + height +
-                ", weight=" + weight +
-                ", id=" + id +
-                ", stats=" + Arrays.toString(stats) +
-                '}';
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Type getType1() {
-        return type1;
-    }
-
-    public void setType1(Type type1) {
-        this.type1 = type1;
-    }
-
-    public Type getType2() {
-        return type2;
-    }
-
-    public void setType2(Type type2) {
-        this.type2 = type2;
-    }
-
-    public Ability getAbilities() {
+    public Ability getAbility() {
         return ability;
     }
 
-    public void setAbilities(Ability ability) {
+    public void setAbility(Ability ability) {
         this.ability = ability;
     }
 
@@ -93,12 +55,12 @@ public class Pokemon {
         this.height = height;
     }
 
-    public int getWeight() {
-        return weight;
+    public Item getHeldItem() {
+        return heldItem;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setHeldItem(Item heldItem) {
+        this.heldItem = heldItem;
     }
 
     public int getId() {
@@ -109,6 +71,10 @@ public class Pokemon {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public Stat[] getStats() {
         return stats;
     }
@@ -117,7 +83,34 @@ public class Pokemon {
         this.stats = stats;
     }
 
-    public boolean isMonotype() {
-        return type2 == null;
+    public Type[] getTypes() {
+        return types;
+    }
+
+    public void setTypes(Type[] types) {
+        this.types = types;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "ability=" + ability +
+                ", baseExperience=" + baseExperience +
+                ", height=" + height +
+                ", heldItem=" + heldItem +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", stats=" + Arrays.toString(stats) +
+                ", types=" + Arrays.toString(types) +
+                ", weight=" + weight +
+                '}';
     }
 }
