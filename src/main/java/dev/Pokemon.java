@@ -1,15 +1,16 @@
 package dev;
 
-import dev.attributes.Type;
 import dev.attributes.Ability;
+import dev.attributes.Type;
 import dev.attributes.stats.Stat;
+import java.util.Arrays;
 
 public class Pokemon {
 
     private final String name;
     private Type type1;
     private Type type2;
-    private Ability[] abilities;
+    private Ability ability;
     private int baseExperience;
     private int height;
     private int weight;
@@ -20,17 +21,32 @@ public class Pokemon {
         name = "missingno";
     }
 
-    public Pokemon(String name, Type type1, Type type2, Ability[] abilities, int baseExperience,
+    public Pokemon(String name, Type type1, Type type2, Ability ability, int baseExperience,
             int height, int weight, int id, Stat[] stats) {
         this.name = name;
         this.type1 = type1;
         this.type2 = type2;
-        this.abilities = abilities;
+        this.ability = ability;
         this.baseExperience = baseExperience;
         this.height = height;
         this.weight = weight;
         this.id = id;
         this.stats = stats;
+    }
+
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "name='" + name + '\'' +
+                ", type1=" + type1 +
+                ", type2=" + type2 +
+                ", ability=" + ability +
+                ", baseExperience=" + baseExperience +
+                ", height=" + height +
+                ", weight=" + weight +
+                ", id=" + id +
+                ", stats=" + Arrays.toString(stats) +
+                '}';
     }
 
     public String getName() {
@@ -53,12 +69,12 @@ public class Pokemon {
         this.type2 = type2;
     }
 
-    public Ability[] getAbilities() {
-        return abilities;
+    public Ability getAbilities() {
+        return ability;
     }
 
-    public void setAbilities(Ability[] abilities) {
-        this.abilities = abilities;
+    public void setAbilities(Ability ability) {
+        this.ability = ability;
     }
 
     public int getBaseExperience() {
