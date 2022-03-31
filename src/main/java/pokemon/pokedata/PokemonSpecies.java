@@ -1,9 +1,9 @@
-package dev;
+package pokemon.pokedata;
 
-import dev.attributes.Ability;
-import dev.attributes.Item;
-import dev.attributes.Type;
-import dev.attributes.stats.Stat;
+import pokemon.pokedata.attributes.Ability;
+import pokemon.pokedata.attributes.Item;
+import pokemon.pokedata.attributes.Type;
+import pokemon.pokedata.attributes.stats.BaseStat;
 import java.util.Arrays;
 
 public class PokemonSpecies {
@@ -15,13 +15,13 @@ public class PokemonSpecies {
     private final int id;
     private final boolean isDefault;
     private final String name;
-    private final Stat[] stats;
+    private final BaseStat[] stats;
     private final Type[] types;
     private final int weight;
 
     public PokemonSpecies(Ability[] abilities, int baseExperience, int height,
             Item[] heldItems, int id, boolean isDefault, String name,
-            Stat[] stats, Type[] types, int weight) {
+            BaseStat[] stats, Type[] types, int weight) {
         this.abilities = abilities;
         this.baseExperience = baseExperience;
         this.height = height;
@@ -44,7 +44,7 @@ public class PokemonSpecies {
                 ", id=" + id +
                 ", isDefault=" + isDefault +
                 ", name='" + name + '\'' +
-                ", stats=" + Arrays.toString(stats) +
+                ", base stats=" + Arrays.toString(stats) +
                 ", types=" + Arrays.toString(types) +
                 ", weight=" + weight +
                 '}';
@@ -78,7 +78,7 @@ public class PokemonSpecies {
         return name;
     }
 
-    public Stat[] getStats() {
+    public BaseStat[] getStats() {
         return stats;
     }
 

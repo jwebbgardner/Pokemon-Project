@@ -1,4 +1,4 @@
-package dev.attributes;
+package pokemon.pokedata.attributes;
 
 import java.util.List;
 

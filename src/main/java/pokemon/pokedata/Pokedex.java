@@ -1,4 +1,4 @@
-package dev;
+package pokemon.pokedata;
 
 import java.util.HashMap;
 

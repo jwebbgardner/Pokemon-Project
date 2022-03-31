@@ -1,4 +1,4 @@
-package dev;
+package pokemon.jsonparser;
 
 import com.google.gson.Gson;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
+import pokemon.pokedata.PokemonSpecies;
 
 public class PokeAPIReader {
 

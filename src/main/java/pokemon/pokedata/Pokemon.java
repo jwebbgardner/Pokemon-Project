@@ -1,9 +1,9 @@
-package dev;
+package pokemon.pokedata;
 
-import dev.attributes.Ability;
-import dev.attributes.Item;
-import dev.attributes.Type;
-import dev.attributes.stats.Stat;
+import pokemon.pokedata.attributes.Ability;
+import pokemon.pokedata.attributes.Item;
+import pokemon.pokedata.attributes.Type;
+import pokemon.pokedata.attributes.stats.Stat;
 import java.util.Arrays;
 
 public class Pokemon {
