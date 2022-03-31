@@ -32,7 +32,7 @@ public class MovesetReader {
     public static Moveset[] movesetParse() {
         try {
             Reader reader = Files.newBufferedReader(
-                    Path.of("Movesets/MovesetTest.json"));
+                    Path.of("Movesets/gen8randombattle.json"));
             JsonReader jsonReader = new JsonReader(reader);
             JsonObject json = parseReader(jsonReader).getAsJsonObject();
             Object[] keys = json.keySet().toArray();

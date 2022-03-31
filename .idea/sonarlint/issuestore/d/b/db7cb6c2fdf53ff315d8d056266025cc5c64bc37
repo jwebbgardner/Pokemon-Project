@@ -1,0 +1,8 @@
+
+—
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûç°Ã
+J
+java:S1068"/Remove this unused "pokedexById" private field.(õúà³ùÿÿÿÿ
+L
+java:S1068"1Remove this unused "pokedexByName" private field.(¢…Ì“ùÿÿÿÿ
