@@ -3,6 +3,7 @@ package pokemon.pokedata;
 import java.util.Arrays;
 import pokemon.pokedata.attributes.Ability;
 import pokemon.pokedata.attributes.Item;
+import pokemon.pokedata.attributes.Move;
 import pokemon.pokedata.attributes.stats.EffortValues;
 import pokemon.pokedata.attributes.stats.Stats;
 

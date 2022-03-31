@@ -1,6 +1,4 @@
-package pokemon.pokedata;
-
-import pokemon.pokedata.attributes.Type;
+package pokemon.pokedata.attributes;
 
 public class Move {
 

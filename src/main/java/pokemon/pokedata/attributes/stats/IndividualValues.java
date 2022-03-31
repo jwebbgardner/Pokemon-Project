@@ -27,7 +27,7 @@ public class IndividualValues {
         this.spe = spe;
     }
 
-    public int[] getEVs() {
+    public int[] getIVs() {
         return new int[]{hp, atk, def, spatk, spdef, spe};
     }
 }
