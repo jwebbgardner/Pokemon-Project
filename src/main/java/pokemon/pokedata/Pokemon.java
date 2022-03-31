@@ -3,7 +3,7 @@ package pokemon.pokedata;
 import pokemon.pokedata.attributes.Ability;
 import pokemon.pokedata.attributes.Item;
 import pokemon.pokedata.attributes.Type;
-import pokemon.pokedata.attributes.stats.Stat;
+import pokemon.pokedata.attributes.stats.Stats;
 import java.util.Arrays;
 
 public class Pokemon {
@@ -14,12 +14,12 @@ public class Pokemon {
     private Item heldItem;
     private int id;
     private final String name;
-    private Stat[] stats;
+    private Stats stats;
     private Type[] types;
     private int weight;
 
     public Pokemon(Ability ability, int baseExperience, int height, Item heldItem, int id,
-            String name, Stat[] stats, Type[] types, int weight) {
+            String name, Stats stats, Type[] types, int weight) {
         this.ability = ability;
         this.baseExperience = baseExperience;
         this.height = height;
@@ -75,11 +75,11 @@ public class Pokemon {
         return name;
     }
 
-    public Stat[] getStats() {
+    public Stats getStats() {
         return stats;
     }
 
-    public void setStats(Stat[] stats) {
+    public void setStats(Stats stats) {
         this.stats = stats;
     }
 
@@ -108,7 +108,7 @@ public class Pokemon {
                 ", heldItem=" + heldItem +
                 ", id=" + id +
                 ", name='" + name + '\'' +
-                ", stats=" + Arrays.toString(stats) +
+                ", stats=" + stats +
                 ", types=" + Arrays.toString(types) +
                 ", weight=" + weight +
                 '}';
