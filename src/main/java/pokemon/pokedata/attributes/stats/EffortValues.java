@@ -10,12 +10,12 @@ public class EffortValues {
     private final int spe;
 
     public EffortValues() {
-        hp = 31;
-        atk = 31;
-        def = 31;
-        spatk = 31;
-        spdef = 31;
-        spe = 31;
+        hp = 0;
+        atk = 0;
+        def = 0;
+        spatk = 0;
+        spdef = 0;
+        spe = 0;
     }
 
     public EffortValues(int hp, int atk, int def, int spatk, int spdef, int spe) {
