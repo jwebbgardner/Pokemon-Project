@@ -5,15 +5,14 @@ import java.util.List;
 public class Type {
 
     private final String name;
-    private final List<Type> immunities;
-    private final List<Type> resistances;
-    private final List<Type> weaknesses;
+    private final int id;
+    private List<Type> immunities;
+    private List<Type> resistances;
+    private List<Type> weaknesses;
 
-    public Type(String name, List<Type> immunities, List<Type> resistances, List<Type> weaknesses) {
+    public Type(String name, int id) {
         this.name = name;
-        this.immunities = immunities;
-        this.resistances = resistances;
-        this.weaknesses = weaknesses;
+        this.id = id;
     }
 
     public boolean isWeakTo(Type defensiveType) {

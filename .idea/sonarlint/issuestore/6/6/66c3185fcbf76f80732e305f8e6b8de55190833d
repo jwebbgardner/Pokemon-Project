@@ -1,15 +1,0 @@
-
-H
-java:S1135"2Complete the task associated to this TODO comment.(ëî³Ó
-b
-java:S5998"LRefactor this repetition that can lead to a stack overflow for large inputs.(Õ†ô
-W
-java:S1854"<Remove this useless assignment to local variable "movesets".(ëÂ­üÿÿÿÿ
-H
-java:S1481"-Remove this unused "movesets" local variable.(ëÂ­üÿÿÿÿ
-<
-java:S11682"&Return an empty array instead of null.(¥¹ï
-o
-java:S5843"TSimplify this regular expression to reduce its complexity from 31 to the 20 allowed.(»´Õóÿÿÿÿÿ
-J
-java:S1068"4Remove this unused "movesetValidator" private field.(ûÆ‘ñ

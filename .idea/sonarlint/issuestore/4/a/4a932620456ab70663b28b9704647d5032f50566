@@ -1,18 +1,0 @@
-
-F
-java:S1068	"+Remove this unused "evasion" private field.(¤ÎñÕùÿÿÿÿ
-A
-java:S1068
-",Remove this unused "accuracy" private field.(ä½E
-A
-java:S1068"&Remove this unused "hp" private field.(­¹Ñ£ÿÿÿÿÿ
-=
-java:S1068"'Remove this unused "atk" private field.(š¿ÓÇ
-B
-java:S1068"'Remove this unused "def" private field.(»Æ„¶üÿÿÿÿ
-D
-java:S1068")Remove this unused "spatk" private field.(ˆÄ ”øÿÿÿÿ
-?
-java:S1068")Remove this unused "spdef" private field.(Öî•Š
-=
-java:S1068"'Remove this unused "spe" private field.(‰¹¨
