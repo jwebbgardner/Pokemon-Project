@@ -20,7 +20,7 @@ public class MovesetReader {
     private final Pattern movesetValidator;
 
     public MovesetReader() {
-        movesetParse();
+        Moveset[] movesets = movesetParse();
         // TODO: Pretty sure this won't work most of the time
         movesetValidator = Pattern.compile(
                 "\"\"[A-z: -]*\": \\{\"level\": [1-9]{2}, \"abilities\": \\[\"[A-z ]*"

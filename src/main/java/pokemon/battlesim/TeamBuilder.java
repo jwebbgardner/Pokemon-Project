@@ -10,7 +10,7 @@ public class TeamBuilder {
 
     }
 
-    public String[] get6RandomPokemon() {
+    public String[] getSixRandomPokemon() {
         return null;
     }
 }
